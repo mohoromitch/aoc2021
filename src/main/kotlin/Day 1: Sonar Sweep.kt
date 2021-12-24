@@ -1,7 +1,7 @@
 import java.io.File
 import java.lang.IndexOutOfBoundsException
 
-fun getFile() = File("src/main/resources/input_1.txt")
+private fun getFile() = File("src/main/resources/input_1.txt")
 
 fun main() {
     part1()
@@ -33,7 +33,7 @@ private fun part1() {
     println("Total increasing count: $increasedCount")
 }
 
-fun part2() {
+private fun part2() {
     var increasedCount = 0
     val depths: MutableList<Int> = ArrayList()
     getFile().forEachLine { depths.add(it.toInt()) }
